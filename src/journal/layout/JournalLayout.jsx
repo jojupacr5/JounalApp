@@ -13,7 +13,7 @@ export const JournalLayout = ({ children }) => {
 
       <Box
         component='main'
-        sx={{ flexGrow: 1, p: 3 }}
+        sx={{ flexGrow: 1, px: 3, pb: 3, pt: 10 }}
       >
         {/* TODO: Toolbar */}
 
