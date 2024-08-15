@@ -5,13 +5,17 @@ import { BrowserRouter } from 'react-router-dom'
 import { JournalApp } from './JournalApp.jsx'
 
 import './styles.css'
+import { Provider } from 'react-redux'
+import { store } from './store'
 
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
-      <JournalApp />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <JournalApp />
+      </BrowserRouter>
+    </Provider>
   </StrictMode>,
 )
