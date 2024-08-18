@@ -5,8 +5,6 @@ import { CheckingAuth } from "../ui"
 import { JournalRoutes } from "../journal/routes/JournalRoutes"
 import { useCheckAuth } from "../hooks"
 
-
-
 export const AppRouter = () => {
 
   const {status} = useCheckAuth();
